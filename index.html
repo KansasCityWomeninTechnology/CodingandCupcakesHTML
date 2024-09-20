@@ -1,8 +1,12 @@
+<!-- Every html document you create will require the !DOCTYPE html declaration at the very top,
+     and the <html></html> tag right below. 
+     
+     All of your code for the page/document will reside inside of the <html> opening and closing tags.
+-->
 <!DOCTYPE html>
 <html>
 
 <head>
-<meta http-equiv="refresh" content="30">
 
 <!-- 
   Unordered Lists and List Items
@@ -20,13 +24,14 @@
 
   The below list items are used to create hyperlinks to redirect your screen between
   our index page, or "home" page and our "contact" page.
+  Basically, this unordered list serves as a navigation bar between our two pages we'll have.
 
   -->
 
+  <!-- Unordered List Below (read above for explanation) -->
 <ul>
     <li><a href="index.html">Home</a></li>
     <!-- Make your own list item here that connects to your contact.html page -->
-     
 </ul>
 
 <!-- 
@@ -50,9 +55,9 @@
 -->
 
 <body>
-<dir align="center">
+<div align="center">
 
-<h1 >My First Heading</h1>
+<h1> My First Heading </h1>
 
 <p> My <b>First</b> Paragraph! </p>
 
@@ -73,41 +78,145 @@
 -->
 
 
-
 <!-- Note that the heading here is <h2> -->
-<!-- <h2> is smaller than <h1> but larger than <h3>-<h6> -->
+<!-- <h2> is smaller than <h1> but larger than <h3>, <h4>, <h5>, and <h6> -->
 <h2>My Second Heading</h2>
 
+
+<!-- 
+    What you will see right below is the <figure> tag.
+    This is a container required for us to use 
+    "figure captions", or captions, beneath our images.
+    
+    The tag for figure captions is <figcaption> as seen
+    below within the <figure> container and below our
+    img tags. 
+    
+    This is how we chose to use HTML to add
+    Product Names and Prices below our images.
+
+    *Optional: You could also remove the <figure></figure> container
+                and house the Product Names and Prices within
+                <p> (paragraph) tags as an alternative.
+
+-->
+<figure>
+
+    <div style="display: inline-block;">
 <!-- 
     HTML images are defined with the <img> tag.
-    The source file (src), alternative text (alt), width, and height are provided as attributes.
-    Alternative text is used by screen readers for those that can't see the image, to briefly explain the image.
+    The source file (src), alternative text (alt), width, and height are called attributes.
+
+    The src attribute "points" to the image you want to use, whether by URL or by file path.
+    Using the file path method means you need to select the folder from your "Explorer", then
+    descend into that folder with a backslash (/), and then select the image you wish to use
+    from that folder.
+
+    The alt attribute, or "alt/alternative text", is used by screen readers for those that can't see the image, to briefly explain the image. It will also be seen in place of the image if the image isn't able to load.
+
+    You can use the width and height attributes to resize your image, if desired.
 
     Replace the image name that's in quotes after src="assets/" with whichever of the provided
     images you prefer and have uploaded from the Google Drive Folder into the assets folder of
     this project. You can also resize the image by changing the width and height attributes.
 -->
-<img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
-<img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
-<img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+    
+    <div style="display: inline-block; padding-left : 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+    
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+ 
+    <!-- Below is what's called a break tag, or "break" -->
+    <!-- These breaks represent the blank space between the two rows -->
+    <br>
+    <br>
+
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+
+    <div style="display: inline-block; padding-left: 10px;">
+        <!-- Replace the image file name in the below img tag -->
+        <img src="assets/No Image Available.svg" alt="No Image Available" width="104" height="142">
+        <!-- Replace the Product Name and Price below -->
+        <figcaption> Product Name </figcaption>
+        <figcaption> $0.00 </figcaption>
+    </div>
+
+</figure>
+    
 
 
-</dir>
+</div>
 
 </body>
 
 
-<dir align="center">
+<div align="center">
+<!-- Break -->
 <br>
+<!-- Horizontal Row -->
+<hr>
+<!-- Break -->
+<br>
+
 <!-- Below is what's called a hyperlink. -->
 <a href="https://kcwomenintech.org/" target="_blank"> KC Women in Technology </a>
 <!-- 
-     The <a> tag, or anchor tag, is used to begin a hyperlink. 
+     The <a> tag, or anchor tag, is used to begin a hyperlink.
+
      The href attribute is where the url you want your hyperlink to go to will live.
+
      The target="_blank" attribute makes sure that the link is opened in a new tab 
      instead of redirecting your current page to the link url.
- -->
 
-</dir>
+     The text between the opening and closing tags is what the hyperlink will be
+     displayed as on your page.
+ -->
+</div>
 
 </html>
